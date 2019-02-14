@@ -1,0 +1,133 @@
+//- ===== PAGE HEAD INCLUDE =====
+include _includes/_head.pug 
+
+//- ===== PAGE LOADING INCLUDE =====
+include _includes/_page-loader.pug  
+ 
+//- ====== NAVIGATION INCLUDE ======
+include _includes/_navigation.pug
+       
+//- start landing_wrapper
+.landing_wrapper.landing_image_wrapper.wow.fadeInUp(data-wow-delay='.07s' data-background='img/landing_cover_image.jpg')
+  .primary-container.h-100
+    .row.no-gutters.h-100.align-items-center
+      .col-lg-6 
+        .landing-content
+          span.line
+          p.welcome-title Hey there, I am Jonathan Albert
+          h3.dot Digital Product Designer
+          p  
+            | A designer with over a decade of experience specializing in both web and interface design. From the outset, I realized I had an affinity for developing user experiences and putting together functional user flows. I help clients design and develop user-friendly, responsive solutions.
+          a.primary_button(href='mailto:jon.albert@gmail.com') Get it touch. 
+//- end landing_wrapper
+  
+//- start works_wrapper
+.wrapper.works_wrapper.wow.fadeInUp(data-wow-offset='-70' data-wow-delay='.08s')
+  .primary-container
+    .row.no-gutters
+      .col-12
+        .section_title.work_section_title
+          .a-logo
+          h4 Selected Works 
+    //- begin of homepage works
+     
+    //- work item start
+    .work-item
+      .row.no-gutters.align-items-center
+        .col-md-6
+          .work_image
+            span.work_count 01
+            .work_img
+              a(href='bell.html')
+                img.img-fluid(src='img/work-01.jpg' alt='Bell Support Services')
+        .col-md-6
+          .work_short_info
+            p UI/UX Design, Wireframes, Brand Integration
+            span.line
+            h4.dot Bell Security Services
+            p.work_short_details
+              | A services dashboard and security suite that would integrate account management features, software fulfillment,  system back-ups, and pc protection.
+            a.primary_button(href='bell.html') Explore.
+    
+    //- work item start
+    .work-item
+      .row.no-gutters.align-items-center
+        .col-md-6
+          .work_image
+            span.work_count 02
+            .work_img
+              a(href='rogers.html')
+                img.img-fluid(src='img/work-02.jpg' alt='Rogers techxpert')
+        .col-md-6
+          .work_short_info
+            p UI Design, Wireframes, UX Flows
+            span.line
+            h4.dot Rogers techxpert
+            p.work_short_details
+              | Techxpert was a project to bring the rogers desktop support portal to mobile devices.
+            a.primary_button(href='rogers.html') Explore.
+    
+    //- work item start
+    .work-item
+      .row.no-gutters.align-items-center
+        .col-md-6
+          .work_image
+            span.work_count 03
+            .work_img
+              a(href='nakisa-finance.html')
+                img.img-fluid(src='img/work-03.jpg' alt='Nakisa Lease Administration')
+        .col-md-6
+          .work_short_info
+            p UX Design, Wireframes, Styleguide.
+            span.line
+            h4.dot Nakisa Lease Administration
+            p.work_short_details
+              | Nakisa Lease Administration is a lease management and accounting solution that centralizes company-wide lease data.
+            a.primary_button(href='nakisa-finance.html') Explore.
+       
+    //- work item start 
+    .work-item
+      .row.no-gutters.align-items-center
+        .col-md-6
+          .work_image
+            span.work_count 04
+            .work_img
+              a(href='nakisa-hcm.html')
+                img.img-fluid(src='img/work-04.jpg' alt='Nakisa - Hanelly (Mobile)')
+        .col-md-6 
+          .work_short_info
+            p UX Design, Wireframes, Styleguide.
+            span.line
+            h4.dot Nakisa - Hanelly (Mobile)
+            p.work_short_details
+              | Hanelly is an interactive cloud organizational design solution that lets you visualize your current and future structures utilizing powerful, and flexible analytics.
+            a.primary_button(href='nakisa-hcm.html') Explore. 
+    //- end of homepage works
+  
+    //- work item start
+    //- .work-item
+    //-   .row.no-gutters.align-items-center
+    //-     .col-md-6
+    //-       .work_image
+    //-         span.work_count 05
+    //-         .work_img
+    //-           a(href='work-details.html')
+    //-             img.img-fluid(src='img/work-05.jpg' alt='')
+    //-     .col-md-6
+    //-       .work_short_info
+    //-         p Web Design 2018
+    //-         span.line
+    //-         h4.dot Personal Portfolio (2017) 
+    //-         p.work_short_details
+    //-           | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum et nesciunt illum doloremque commodi nihil? Dolores fugit mollitia cumque magni, dignissimos, reprehenderit, omnis veniam incidunt reiciendis recusandae voluptat.
+    //-         a.primary_button(href='work-details.html') Explore.
+         
+
+
+//- end works_wrapper
+ 
+//- ======== Footer Content ======
+include _includes/_footer.pug
+
+//- ========  All JS Here ========
+include _includes/_js.pug

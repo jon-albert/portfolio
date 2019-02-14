@@ -1,0 +1,143 @@
+/* ============================================================
+    --HELPER CLASSES
+============================================================ */
+
+.oflow-hide {
+    overflow: hidden;
+}
+
+.wrapper {
+	padding: 100px 40px;
+}
+
+.line {
+	display: block;
+	height: 3px;
+	width: 50px;
+	background-color: $accentColor;
+	margin-bottom: 15px;
+}
+
+.dot {
+    position: relative;
+}
+
+.dot::after {
+	position: absolute;
+	content: ".";
+	color: $accentColor;
+}
+
+.zigzag {
+    display: block;
+	padding-left: 2px;
+}
+
+.section_title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+.section_title h3 {
+	font-size: 22px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+	position: relative;
+  color: $offBlack;
+}
+
+.section_title h3::after {
+	position: absolute;
+	content: "";
+	height: 6px;
+	width: 6px;
+	background-color: $accentColor;
+	border-radius: 50%;
+	top: 6px;
+	left: 50%;
+	outline: 1px solid $accentColor;
+	outline-offset: 3px;
+	transform: translateX(-50%) rotate(45deg);
+	-webkit-transform: translateX(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) rotate(45deg);
+	-o-transform: translateX(-50%) rotate(45deg);
+}
+
+.section_title .zigzag {
+	display: inline-block;
+}
+
+.section_title_two {
+	font-size: 28px;
+	margin-bottom: 6px;
+	text-transform: capitalize;
+	font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.section_title_two::before {
+	position: absolute;
+	content: attr(data-text);
+	top: -20px;
+	left: 0;
+	color: $offWhite;
+	z-index: -1;
+	text-transform: uppercase;
+	font-size: 120px;
+	font-weight: 900;
+	opacity: .08;
+}
+
+/* ----------------- page loader style start ----------------- */
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+	left: 0;
+	background-color: $accentColor;
+}
+
+.loader::after {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: $offBlack;
+	background: linear-gradient(180deg, $accentColor 0%, darken($accentColor, 5%) 33%, darken($accentColor, 5%) 66%, darken($accentColor, 0%) 100%);
+	z-index: -1;
+}
+.circle {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  p{
+    font-weight: 700;
+  }
+}
+
+.circle img {
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+/* ----------------- page loader style end ----------------- */

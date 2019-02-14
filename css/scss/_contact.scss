@@ -1,0 +1,189 @@
+/* ============================================================
+    11-contact_wrapper
+============================================================ */
+
+.map-image {
+    height: 350px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 22px;
+}
+
+.map-image::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    z-index: -1;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.map-image:hover::after {
+    opacity: .3;
+}
+
+.map-image a {
+	position: absolute;
+	bottom: -22px;
+	color: #fff;
+	font-weight: 500;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	left: 40px;
+	background-color: $accentColor;
+	padding: 0 25px;
+	box-shadow: 0 0 25px #111;
+	height: 44px;
+	line-height: 48px;
+}
+
+.map-image a:hover {
+	background-color: darken( $accentColor, 10% );
+}
+
+.input_group {
+    position: relative;
+	margin-bottom: 35px;
+}
+
+.input_group label {
+    margin: 0;
+    position: absolute;
+    left: 10px;
+    cursor: text;
+    font-style: italic;
+    color: #ccc;
+    background: #FFFFFF;
+    top: -10px;
+    padding: 4px 17px 2px 12px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.input_group label::after {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 0;
+	background-color: $accentColor;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	top: 10px;
+	left: 100%;
+}
+
+.input_control:focus + label {
+    color: #777;
+}
+
+.input_control:focus + label::after {
+	width: 90%;
+}
+
+.input_group label span {
+	display: inline-block;
+	color: $accentColor;
+	margin-left: 2px;
+	font-weight: 700;
+}
+
+.input_control {
+	padding: 0 15px;
+	width: 100%;
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid #888;
+	font-size: 17px;
+	box-shadow: none;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	height: 50px;
+}
+
+.input_control:focus {
+	border: 2px solid #444;
+}
+
+textarea.input_control {
+	height: 220px;
+	resize: none;
+	line-height: 1.5;
+	padding-top: 12px;
+}
+
+.contact__form button {
+	cursor: pointer;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background-color: darken( $accentColor, 10% );
+    color: #fff;
+	width: 40%;
+	height: 45px;
+	font-weight: 500;
+	letter-spacing: 1px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.contact__form button:hover {
+    background-color: $accentColor;
+}
+
+/* form validation start */
+
+.error {
+    color: #dd5c5c;
+	margin-bottom: 30px;
+}
+
+.success {
+    color: $accentColor;
+	margin-bottom: 30px;
+}
+
+.input_required.inputEmpty + label {
+    color: #dd5c5c;
+}
+
+.input_required.valid + label {
+    color: #777;
+}
+
+.inputNotEmpty {
+    border-color: #444;
+}
+
+.input_control.inputNotEmpty + label::after {
+	width: 90%;
+}
+
+.input_control.inputNotEmpty + label {
+    color: #777;
+}
+
+.input_required.inputNotEmpty.invalid + label {
+    color: #dd5c5c;
+}
+
+/* form validation end */

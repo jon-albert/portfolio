@@ -1,0 +1,97 @@
+/* ============================================================
+    12-footer_wrapper
+============================================================ */
+
+footer {
+	background-color: #FFFFFF;
+}
+.footer_wrapper{
+	padding: 60px 40px;
+}
+.social {
+	margin-bottom: 40px;
+}
+
+.social a {
+	color: #fff;
+	display: inline-block;
+	margin-right: 24px;
+	font-weight: 500;
+	margin-bottom: 20px;
+	font-size: 17px;
+	letter-spacing: inherit;
+}
+
+.social a:last-child {
+	margin-right: 0;
+}
+
+.footer_widget {
+	margin-bottom: 30px;
+}
+
+.footer_widget_title {
+	font-size: 18px;
+	margin-bottom: 15px;
+    color: $offBlack;
+    font-weight: normal;
+}
+
+.footer_widget .line {
+    margin-bottom: 30px;
+}
+
+.footer_widget p {
+	color: #999;
+	font-size: 18px;
+	margin-top: 10px;
+	font-weight: 500;
+}
+
+.footer_widget a {
+	color: inherit;
+	font-weight: 500;
+}
+
+.footer_widget a:hover {
+	color: $offBlack;
+}
+
+.copyright {
+    margin-top: 25px;
+}
+
+.copyright span {
+    font-weight: 500;
+    color: $accentColor;
+}
+
+.go_top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    height: 40px;
+    line-height: 42px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: $accentColor;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.go_top:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.go_top.show {
+    right: 40px;
+    bottom: 45px;
+    opacity: 1;
+    visibility: visible;
+}
