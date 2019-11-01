@@ -1,0 +1,73 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    title Jonathan Albert - Product Designer
+    
+    include ../_includes/_head
+    //- link(rel='stylesheet', href='./css/style-light.css')
+
+  body#menu.body-page
+    // Page Loader
+    include ../_includes/_preloader
+    // Start Header
+    include ../_includes/_header
+    // Start Cover
+    include ../_includes/_cover 
+     
+    // Start Content
+    main#itempage.page-main.page-fullpage.main-anim
+      .section.section-twoside.fp-auto-height-responsive.section-item.padding-none(data-section='item-alpha')
+        .section-cover-tier.mask-black
+        .section-wrapper.largewidth
+          .item.row
+            .col-12.col-md-12.center-vh
+              .section-content.anim
+                article.article.article-light
+                  .article-content
+                    .wrapper
+                      h2.highlight Hanelly Mobile
+                      .info-small
+                        p
+                          i.icon.fa.fa-building
+                          |  Nakisa
+                        p
+                          i.icon.fa.fa-paint-brush
+                          | UI/UX Design, Style Guide Creation
+                            
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+                          h4.project-sub-title About this project
+                          p
+                            | Hanelly is an interactive cloud organizational design solution that lets you visualize your current 
+                            | and future structures utilizing powerful, and flexible analytics.
+
+                          h4.project-sub-title My Contributions
+                          p
+                            | Created wireframes, user flows, style guide and user personas for a mobile version of Nakisa’s Hanelly 
+                            | software. The primary purposes of this project was to map out a mobile version of the software while using 
+                            | the newly created style guide as the framework.
+
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/nakisa-hanelly-mobile-1.png', alt='Hanelly - Mobile Account')
+
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/nakisa-hanelly-mobile-2.png', alt='Hanelly - Mobile Search')
+
+                .btns-action.row.item-buttons
+                  .col-md-12.item-buttons-next
+                    a.btn.btn-outline-white.border-0(href='nhl-showcase.html')
+                      i.icon.fa.fa-arrow-circle-left.mr-2
+                      span.txt Prev
+                    a.btn.btn-outline-white.border-0(href='nakisa-slan.html')
+                      span.txt Next
+                      i.icon.fa.fa-arrow-circle-right.ml-2
+    // End Content
+    // Scripts
+    include ../_includes/_scripts

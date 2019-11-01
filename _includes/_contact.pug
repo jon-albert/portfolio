@@ -1,0 +1,38 @@
+.section.section-contact.fp-auto-height-responsive.no-slide-arrows(data-section='contact')
+  .section-wrapper.center-vh.dir-col.anim
+    .section-title.text-center
+      h2.display-4.display-title.anim-2.highlight Contact
+      p Want to get in touch? Send me a message.
+    .section-content.reduced
+      .row
+        .col-12.col-md-12.col-lg-7.text-left.contact-left.anim-1
+          form#message_form.send_message_form.message.form(method='post', action='https://formspree.io/mknwybno')
+            .form-group.name
+              label(for='mes-name') Name
+              input#mes-name.form-control-line.form-success-clean(name='name', type='text', placeholder='', required='')
+            .form-group.email
+              label(for='mes-email') Email
+              input#mes-email.form-control-line.form-success-clean(type='email', placeholder='', name='email', required='')
+            .form-group.no-border
+              label(for='mes-text') Message
+              textarea#mes-text.form-control.form-control-outline.thick.form-success-clean(name='message', required='')
+              div
+                p.message-ok.invisible.form-text-feedback.form-success-visible
+                  | Your message
+                  | has been sent, thank you.
+            .btns
+              button#submit-message.btn.btn-outline-white.btn-full.email_b(name='submit_message')
+                i.icon.ion-email.mr-2
+                span.txt Send
+                span.arrow-icon
+        .col-12.col-md-12.col-lg-5.text-left.contact-right.anim-1
+          div
+            h4 Address
+            p Montreal, Qu&eacute;bec
+            p Canada
+          div
+            h4 Phone
+            p (514) 994-4844
+          div
+            h4 Email
+            p jon.alber@gmail.com

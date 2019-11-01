@@ -1,0 +1,68 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    title Jonathan Albert - Product Designer
+    
+    include ../_includes/_head
+    //- link(rel='stylesheet', href='./css/style-light.css')
+
+  body#menu.body-page
+    // Page Loader
+    include ../_includes/_preloader
+    // Start Header
+    include ../_includes/_header
+    // Start Cover
+    include ../_includes/_cover 
+     
+    // Start Content
+    main#itempage.page-main.page-fullpage.main-anim
+      .section.section-twoside.fp-auto-height-responsive.section-item.padding-none(data-section='item-alpha')
+        .section-cover-tier.mask-black
+        .section-wrapper.largewidth
+          .item.row
+            .col-12.col-md-12.center-vh
+              .section-content.anim
+                article.article.article-light
+                  .article-content
+                    .wrapper
+                      h2.highlight Security Advisor
+                      .info-small
+                        p
+                          i.icon.fa.fa-building
+                          |  Bell
+                        p
+                          i.icon.fa.fa-paint-brush
+                          | UI/UX Design
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+                          h4.project-sub-title About this project
+                          p
+                            | A services dashboard and security suite that would integrate account management 
+                            | features, software fulfillment, system back-ups, and pc protection. The primary 
+                            | focus was to give the user a resource for their internet support needs ultimately 
+                            | trying reducing the amount of support calls.
+
+                          h4.project-sub-title My Contributions  
+                          p
+                            | Primary deliverables were wireframe, user flow, and branding integration for the 
+                            | support dashboard and security services. Creating a custom experience to best meet Bell’s 
+                            | requirements.
+
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/bell-security.png', alt='Image')
+                       
+
+                .btns-action.row.item-buttons
+                  .col-md-12.item-buttons-next
+                    a.btn.btn-outline-white.border-0(href='rogers-techxpert.html')
+                      i.icon.fa.fa-arrow-circle-left.mr-2
+                      span.txt Prev
+                    a.btn.btn-outline-white.border-0(href='portfolio-2017.html')
+                      span.txt Next
+                      i.icon.fa.fa-arrow-circle-right.ml-2
+    // End Content
+    // Scripts
+    include ../_includes/_scripts

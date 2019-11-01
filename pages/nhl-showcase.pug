@@ -1,0 +1,84 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    title Jonathan Albert - Product Designer
+    
+    include ../_includes/_head
+    //- link(rel='stylesheet', href='./css/style-light.css')
+
+  body#menu.body-page
+    // Page Loader
+    include ../_includes/_preloader
+    // Start Header
+    include ../_includes/_header
+    // Start Cover
+    include ../_includes/_cover 
+     
+    // Start Content
+    main#itempage.page-main.page-fullpage.main-anim
+      .section.section-twoside.fp-auto-height-responsive.section-item.padding-none(data-section='item-alpha')
+        .section-cover-tier.mask-black
+        .section-wrapper.largewidth
+          .item.row
+            .col-12.col-md-12.center-vh
+              .section-content.anim
+                article.article.article-light
+                  .article-content
+                    .wrapper
+                      h2.highlight NHL Showcase
+                      .info-small
+                        p
+                          i.icon.fa.fa-building
+                          |  TELUS
+                        p
+                          i.icon.fa.fa-paint-brush
+                          | UI/UX Design
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+                          h4.project-sub-title About this project
+                          p
+                            | NHL Showcase is a hub created for all TELUS Optik users to get regionally specific 
+                            | team information and access to recording features quickly and easily for the start of 
+                            | the 2019-20 NHL season. Content would be delivered based on either geo-location or user 
+                            | preference between all regions covered by TELUS Optik services (Vancouver, Calgary, Edmonton).
+
+                          h4.project-sub-title My Contributions
+                          p
+                            | Worked closely with TELUS to create user-journeys, wireframes and ultimately the final 
+                            | UI with the help of the lead designer of the project to ensure an experience that would 
+                            | reflect TELUS branding and user guidelines.
+
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/nhl-showcase.jpg', alt='NHL Showcase')
+                        
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/nhl-standings.jpg', alt='NHL Standings')
+
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/nhl-schedule.jpg', alt='NHL Schedule')
+
+
+                .btns-action.row.item-buttons
+                  .col-md-12.item-buttons-next
+                    a.btn.btn-outline-white.border-0(href='portfolio-2017.html')
+                      i.icon.fa.fa-arrow-circle-left.mr-2
+                      span.txt Prev
+                    a.btn.btn-outline-white.border-0(href='nakisa-hanelly.html')
+                      span.txt Next
+                      i.icon.fa.fa-arrow-circle-right.ml-2
+    // End Content
+    // Scripts
+    include ../_includes/_scripts

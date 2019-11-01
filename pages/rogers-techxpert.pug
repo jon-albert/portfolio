@@ -1,0 +1,87 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    title Jonathan Albert - Product Designer
+    
+    include ../_includes/_head
+    //- link(rel='stylesheet', href='./css/style-light.css')
+
+  body#menu.body-page
+    // Page Loader
+    include ../_includes/_preloader
+    // Start Header
+    include ../_includes/_header
+    // Start Cover
+    include ../_includes/_cover 
+      
+    // Start Content
+    main#itempage.page-main.page-fullpage.main-anim
+      .section.section-twoside.fp-auto-height-responsive.section-item.padding-none(data-section='item-alpha')
+        .section-cover-tier.mask-black
+        .section-wrapper.largewidth
+          .item.row
+            .col-12.col-md-12.center-vh
+              .section-content.anim
+                article.article.article-light
+                  .article-content
+                    .wrapper
+                      h2.highlight Techxpert
+                      .info-small
+                        p
+                          i.icon.fa.fa-building
+                          |  Rogers
+                        p
+                          i.icon.fa.fa-paint-brush
+                          | UI/UX Design
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+                          h4.project-sub-title About this project
+                          p
+                            | Techxpert was a project to bring premium support to mobile and desktop devices. 
+                            | Rogers TechXpert service provides 24/7 extended technology support for computers and other connected devices.
+
+                          h4.project-sub-title My Contributions                        
+                          p
+                            | This was a collaborative effort with another internal designer, we colaborated on all UI layouts and 
+                            | interactions, user-flows and journeys. Branding was created along side the rogers design team to 
+                            | assure all design was aligned with their internal branding standards.
+
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/rogers-techxpert.png', alt='techxpert - Status')      
+
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/rogers-techxpert-services.png', alt='techxpert - Services')
+                            
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/rogers-techxpert-activity.png', alt='techxpert - Activity')
+
+                      .item.row.justify-content-between.mt-5
+                        .col-12.col-md-12.col-lg-12
+                          .section-content.anim
+                            .images.text-center
+                              .img-frame-normal.frame-small.portrait
+                                img.img(src='./img/rogers-techxpert-mobile.png', alt='techxpert - Mobile')
+                          
+                          
+                .btns-action.row.item-buttons
+                  .col-md-12.item-buttons-next
+                    a.btn.btn-outline-white.border-0(href='nakisa-slan.html')
+                      i.icon.fa.fa-arrow-circle-left.mr-2
+                      span.txt Prev
+                    a.btn.btn-outline-white.border-0(href='bell-security.html')
+                      span.txt Next
+                      i.icon.fa.fa-arrow-circle-right.ml-2
+    // End Content
+    // Scripts
+    include ../_includes/_scripts
