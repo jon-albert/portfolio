@@ -50,7 +50,7 @@
           <ul class="social">
             <li><a href="tel:514-994-4844"><i class="icon ion-android-call"></i></a></li>
             <li><a href="mailto:jon.albert@gmail.com"><i class="icon ion-email"></i></a></li>
-            <li><a href="#"><i class="icon ion-ios-paper"></i></a></li>
+            <li><a href="Jonathan_Albert-CV.pdf" target="_blank"><i class="icon ion-ios-paper"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -152,7 +152,9 @@
                 </li>
               </ul>
             </div>
+            <div class="items-pagination bar"></div>
           </div>
+          <footer class="section-footer scrolldown"><a class="down"><span class="icon"></span><span class="txt">Get In Touch</span></a></footer>
         </div>
       </div>
       <!-- Start Contact-->
@@ -165,28 +167,15 @@
           <div class="section-content reduced">
             <div class="row">
               <div class="col-12 col-md-12 col-lg-7 text-left contact-left anim-1">
-                <form class="send_message_form message form" id="message_form" method="post" action="https://formspree.io/xlerznba">
-                  <div class="form-group name">
-                    <label for="mes-name">Name</label>
-                    <input class="form-control-line form-success-clean" id="mes-name" name="name" type="text" placeholder="" required="">
-                  </div>
-                  <div class="form-group email">
-                    <label for="mes-email">Email</label>
-                    <input class="form-control-line form-success-clean" id="mes-email" type="_replyto" placeholder="" name="email" required="">
-                  </div>
-                  <div class="form-group no-border">
-                    <label for="mes-text">Message</label>
-                    <textarea class="form-control form-control-outline thick form-success-clean" id="mes-text" name="message" required=""></textarea>
-                    <div>
-                      <p class="message-ok invisible form-text-feedback form-success-visible">
-                        Your message
-                        has been sent, thank you.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="btns">
-                    <button class="btn btn-outline-white btn-full email_b" id="submit-message" name="submit_message" type="submit"><i class="icon ion-email mr-2"></i><span class="txt">Send</span><span class="arrow-icon"></span></button>
-                  </div>
+                <form action="https://formspree.io/xlerznba" method="POST">
+                  <label for="mes-name">Name</label>
+                  <input class="form-control-line form-success-clean" id="mes-name" type="text" name="name">
+                  <label for="mes-email">Email</label>
+                  <label>Email</label>
+                  <input class="form-control-line form-success-clean" id="mes-email" type="email" name="_replyto">
+                  <label for="mes-text">Message</label>
+                  <textarea class="form-control form-control-outline thick form-success-clean" id="mes-text" type="text" name="message"> </textarea>
+                  <input class="btn btn-outline-white btn-full email_b sub-btn" id="submit-btn" type="submit" value="Send">
                 </form>
               </div>
               <div class="col-12 col-md-12 col-lg-5 text-left contact-right anim-1">
@@ -215,7 +204,7 @@
         <div class="footer-left"><span class="opacity-75"><i class="icon ion-android-call"></i>(514) 994-4844</span><span class="opacity-75"><i class="icon ion-email"></i>jon.albert@gmail.com</span></div>
         <!-- Right content-->
         <div class="footer-right"><i class="icon ion-document"></i>
-          <p class="note"><a href="#"><span class="marked"> Download CV</span></a></p>
+          <p class="note"><a href="Jonathan_Albert-CV.pdf" target="_blank"><span class="marked"> Download CV</span></a></p>
         </div>
       </footer>
       <!-- Scripts-->
