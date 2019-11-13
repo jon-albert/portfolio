@@ -128,7 +128,7 @@ audio, canvas, img, svg, video {
   height: 100%;
   top: 0;
   left: 0;
-  background: #fff;
+  background: #1e1e1e;
   display: block
 }
 
@@ -168,7 +168,7 @@ audio, canvas, img, svg, video {
   width: 0px;
   height: 40px;
   content: "";
-  background: #000000;
+  background: #1e1e1e;
   border-radius: 100px;
   border: 20px solid #fff;
   border-top-color: rgba(0, 0, 0, 0.9);
